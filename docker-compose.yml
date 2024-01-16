@@ -1,0 +1,33 @@
+version: "3"
+
+services:
+  database:
+    build: ./database
+    container_name: database
+    restart: always
+    ports:
+      - "3306:3306"
+    networks:
+      - spring_net
+
+  backend:
+    build: ./backend
+    ports:
+      - "8080:8080"
+    restart: always
+    networks:
+      - spring_net
+      - frontend_net
+    depends_on:
+      - database
+  
+  frontend:
+    build: ./front
+    ports:
+      - 3000:3000
+    networks:
+      - frontend_net
+
+networks:
+  spring_net:
+  frontend_net:

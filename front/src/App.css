@@ -1,0 +1,246 @@
+body {
+  overflow-y: scroll;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.flexBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  flex-direction: column;
+}
+
+.points {
+  font-size: 20px;
+  padding: 15px;
+}
+
+.projects {
+  width: 100%;
+  flex-direction: column;
+}
+
+
+.project {
+  width: 60%;
+  background-color: #282c34;
+  margin: 20px;
+  min-height: 110px;
+  color: white;
+  font-weight: bold;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 10px;
+  
+
+}
+
+.addProject {
+  background-color: rgb(126, 135, 132);
+  border-radius: 20%;
+  flex-direction: row;
+}
+
+.addProject > h2 {
+  margin: 10px;
+}
+
+.inputAdd > input {
+  background-color: #282c34;
+  color: white;
+  border: none;
+  font-size: 15px;
+  margin: 10px;
+}
+
+.inputAdd > input::placeholder {
+  color: rgba(245, 245, 245, 0.684);
+}
+
+
+.inputAdd > button, .edit > button {
+  background-color: white;
+  border: none;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  margin: 10px;
+
+}
+
+.projectButtons{
+  min-width: 150px;
+  justify-content: space-between;
+}
+
+.projectButtons > button {
+  background-color: #282c34;
+  border: none;
+  cursor: pointer;
+}
+
+.projectName{
+  justify-content: space-between;
+  width: 100%;
+  min-height: 90px;
+  padding-left: 15px;
+}
+
+.tasks {
+  border-top: solid white 2px;
+  width: 80%;
+  padding: 15px;
+  justify-content: center;
+  background-color: #282c34;
+}
+.task:first-child {
+  padding: 0px;
+}
+.task:last-child{
+  border:none
+}
+
+.task{
+  flex-direction: column;
+  border-bottom: rgb(155, 158, 159) 2px solid;
+}
+
+.firstRowTask {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.taskContent {
+  justify-content: space-between;
+  width: 95%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.icon-trash, .icon-pencil, .icon-angle-circled-up, .icon-angle-circled-down, .icon-plus{
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.edit {
+  padding: 15px;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.editName{
+    font-size: 16px;
+    margin: 10px;
+}
+
+.tittle {
+  font-size: 18px;
+  font-weight: bold;
+  
+}
+
+.done {
+  color: aquamarine;
+}
+
+.notdone {
+  color: rgba(156, 156, 156, 0.941);
+}
+
+.buttoon{
+  background-color: #282c34;
+  border: solid rgb(70, 69, 69) 1px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.buttons{
+  min-width: 80px;
+  justify-content: space-between;
+}
+
+.row{
+  flex-direction: row;
+}
+
+.addTaskButton > button {
+  background-color: #282c34;
+  border: none;
+  cursor: pointer;
+}
+.addTaskButton{
+  padding-top: 15px;
+}
+
+.choose {
+  background-color:#282c34;
+  border: none;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  margin: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.button2 {
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.active{
+  background-color: #282c34;
+}
+
+.disactive {
+  background-color: #6b6b6b;
+}
+
+.addTask {
+  width: 100%;
+  flex-direction: column;
+}
+
+.tittleAndPoints {
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px;
+}
+
+.tittleAndPoints > label > input, .description > label > textarea , .projectAndDate > label > select, .projectAndDate > label > input{
+  margin: 10px;
+  background-color: #282c34;
+  color: white;
+  border: white solid 2px;
+  font-size: 15px;
+}
+
+.description {
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.borderline{
+  height: 2px;
+  width: 80%;
+  background-color: white;
+  margin-bottom: 10px;
+}
